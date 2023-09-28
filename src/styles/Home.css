@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    color: white;
+}
+
+.header{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: rgba(3, 3, 3, 0.477);
+    backdrop-filter: blur(12px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    height: 10vh;
+}
+
+.logo{
+    font-size: 2rem;
+    color: #efff;
+    text-decoration: none;
+    font-weight: 700;
+    filter: drop-shadow(0 0 5px blue);
+}
+
+.navbar a{
+    font-size: 18px;
+    color: #efff;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 30px;
+    transition: all .2s;
+}
+
+.navbar a:hover ,.navbar a.active{
+    /* font-size: 20px; */
+    color: aquamarine;
+}
+
+.main,.parent{
+    min-height: 100vh;
+    background: linear-gradient(to right, #ffffff, #6db4f24b) ,url("https://i.ibb.co/ZKYv8Hc/pexels-francesco-ungaro-1525041.jpg") no-repeat center center/cover;
+    background: linear-gradient(to right, #13131366, rgba(0, 0, 0, 0.068)) ,url("https://i.ibb.co/KjJxDDD/nasa-Q1p7bh3-SHj8-unsplash.jpg" ) no-repeat center center/cover;
+}
+
+.home{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.homeContent{
+    max-width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.homeContent h1{
+    max-width: 100%;
+    font-style: 3rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.405);
+    color: rgb(138, 229, 177);
+}
+.homeContent p{
+    font-size: 1.4rem;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    margin: 20px 0px;
+}
+.homeContent .startBtn{
+    width: 190px;
+    height: 55px;
+    background: rgb(36, 213, 112);
+    border: 2px solid #efff;
+    color: #efff;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 0 0 8px greenyellow;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all .3s , transform 0s;
+}
+.homeContent .startBtn:hover{
+    background:transparent;
+    box-shadow: none;
+}
+.homeContent .startBtn:active{
+    transform: scale(.89);
+}
+.popupInfo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 500px;
+    border-radius: 6px;
+    background: #efff;
+    opacity: 0;
+    padding: 5px 20px;    
+    pointer-events: none;
+}
+
+.popupInfo h2{
+    font-size: 30px;
+    color: seagreen;
+ }
+
+ 
+ .popupInfo ul{
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    margin: 4px;
+    color: black;
+}
+
+.btnGroup{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid black;
+    margin-top: 10px;
+    padding: 10px 0px ;
+
+}
+
+.popupInfo .btnGroup .infoBtn, .continueBtn{
+    width: 130px;
+    height: 45px;
+    background: seagreen;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.534);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border: 2px solid rgb(158, 233, 190);
+    color: #efff;
+    transition: .3s;
+}
+.continueBtn{
+    cursor: not-allowed;
+}
+.popupInfo .btnGroup .infoBtn:nth-child(n):hover,.continueBtn:hover{
+    background: transparent;
+    color: black;
+}

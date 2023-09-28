@@ -1,0 +1,40 @@
+main.quest{
+    display: flex;
+    background: rgba(0, 0, 0, .3);
+    border: 1px solid #eeef;
+    backdrop-filter: blur(2px);
+    padding: 2rem;
+    text-align: center;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    max-height: 52vh;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    /* top: 100px; */
+    border-radius: 10px;
+    /* overflow-y: scroll; */
+}
+main .mainquest h2{
+    margin: 1rem auto;
+    border: none;
+}
+main .options{
+    width: 100%;
+}
+main .options ol li{
+    padding: 10px;
+    transition: .3s;
+    width: 100%;
+    display: block;
+    border: 1px solid rgb(158, 233, 190);
+    font-weight: 500;    
+    margin: 1rem;
+}
+main .options ol li:hover, main .options ol li.checked{
+    box-shadow:inset 0 0 10px rgba(0, 0, 0, 0.534);
+    cursor: pointer;
+    background-color: #efff;
+   color: black;
+}

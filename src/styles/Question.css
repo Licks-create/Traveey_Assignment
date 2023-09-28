@@ -1,0 +1,150 @@
+div.waitpage{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 100vh;
+}
+div.waitpage img{
+    top: 0px;
+    z-index: 1;
+    width: 50%;
+}
+div.waitpage{
+    padding-top: 4rem;
+    z-index: 101;
+}
+
+
+
+
+
+.questions{
+    padding-top: 5rem;
+    text-align: center;
+    border: 0px solid;
+}
+.questions h2{
+    /* border: 2px solid ; */
+    /* color: rgb(172, 250, 206); */
+    border-radius: 10px;
+    padding: 4px;
+}
+
+
+.questionPage .List{
+    width:80%;
+    margin: auto;
+    border-radius: 12px;
+    height: 10vh;
+    background: #eeef;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.List button.key{
+     width: 100px;
+     height: 80%;
+     background: seagreen;
+     border-radius: 6px;
+     text-decoration: none;
+     font-weight: 700;
+     font-size: 16px;
+     color: black;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.534);
+     cursor: pointer;
+     display: inline-block;
+     border: 2px solid rgb(158, 233, 190);
+     color: #efff;
+     transition: .3s;
+}
+.List button.key:hover{
+    background: transparent;
+    color: black;
+    cursor: not-allowed;
+}
+
+
+.attempted .countBox{
+    height: 10vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.score{
+    border: 1px solid;
+    width: 80%;
+    margin: auto;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(12px);
+    border-radius: 10px;
+}
+
+.score .total{
+    border-radius: 10px;
+    margin: .4rem;
+    background: seagreen;
+    border: 1px solid #eeef;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.534);
+    width: 50px;
+    padding: .5rem;
+}
+.nextAndPre{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 10vh;
+}
+
+.nextAndPre .btn{
+    width: 130px;
+    height: 45px;
+    background: seagreen;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.534);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border: 2px solid rgb(158, 233, 190);
+    color: #efff;
+    transition: .3s;
+}
+
+.btn:hover,  a.homepage:hover{
+    color: black;
+    background-color: #eeef;
+}
+
+.homepage{
+    width: 200px;
+    margin: auto;
+    background: seagreen;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 2rem;
+    color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.534);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border: 2px solid rgb(158, 233, 190);
+    color: #efff;
+    transition: .3s;   
+    margin-top: 1.5rem;
+}
